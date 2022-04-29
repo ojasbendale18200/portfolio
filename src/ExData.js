@@ -15,7 +15,7 @@ const workHistory = [
     companyName: "K Narkhede Vidyalaya",
     role: "SSC (X)",
     duration: "Jun'15 – Mar'16",
-    workDes: ["Percentage:- 62%"],
+    workDes: ["Percentage:- 72%"],
   },
 ];
 
