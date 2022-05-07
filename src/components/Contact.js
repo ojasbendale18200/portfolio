@@ -9,7 +9,31 @@ import {
   RESUME_PATH,
   TWITTER_ID,
 } from "../root.link";
+import { useRef } from "react";
+import emailjs from "emailjs-com";
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ujcdyhi",
+        "template_pxgjf02",
+        form.current,
+        "WnNgJkHy3jMsGEfW2"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    form.current.value = "  ";
+  };
   return (
     <section className="my-28" id="contact">
       <header className="px-5 text-2xl font-bold pt-10">
@@ -84,6 +108,8 @@ const Contact = () => {
             className="flex flex-col space-y-3 m-auto w-full"
             name="contact"
             method="post"
+            onSubmit={sendEmail}
+            ref={form}
           >
             <input type="hidden" name="form-name" value="contact" />
 
