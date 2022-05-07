@@ -1,5 +1,5 @@
 export const RESUME_PATH =
-  "https://drive.google.com/file/d/1RDISlDQJsQF17jrSioqFvmYwTmdYMFem/view?usp=sharing";
+  "https://drive.google.com/file/d/1i9u56SNtX9JHvMufcTtsjsVC9QPTxTv1/view?usp=sharing";
 export const GITHUB_USERNAME = "ojasbendale18200";
 export const LINKEDIN_USERNAME = "ojas-bendale-344081203";
 export const FIRST_NAME = "Ojas";
